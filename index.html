@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+
+      <!--Floor-->
+      <a-plane color="orange" position="0 0 0" rotation="-90 0 0" width="20" height="10"
+      ></a-plane>
+
+      <!--Antenna-->
+      <a-circle position="0 9.15 0" color="green" radius="0.8" material="side: double"></a-circle>
+
+      <a-cylinder color="grey" height="1.5" radius="0.05" position="0 11 0"
+        animation="property: position; from:-0.2 10.4 -0.1;to: 0.2 10.4 -0.1;dir:alternate;loop: true; dur: 1000;">
+      </a-cylinder>
+
+      <a-sphere color="red" radius="0.3" position="0 11 0"
+        animation="property: position; from:-0.2 11 -0.1;to: 0.2 11 -0.1;dir:alternate;loop: true; dur: 1000;"
+      ></a-sphere>
+
+      <!--Head-->
+      <a-box color="#068AC5" position="0 8 0" width="3.2" height="2.2"></a-box>
+
+      <!--Eyes-->
+      <a-sphere color="white" position="-0.63 8.3 0.2" radius="0.6" rotation="0 10 0">
+      </a-sphere>
+
+      <a-sphere color="black" radius="0.15" position="-0.63 8.1 0.9"
+        animation="property: position; from:-0.63 8.1 0.9;to: -0.63 8.3 0.9;dir:alternate;loop: true; dur: 1000;">
+      </a-sphere>
+
+      <a-sphere color="white" position="0.63 8.3 0.2" radius="0.6" rotation="0 -10 0">
+      </a-sphere>
+
+      <a-sphere color="black" radius="0.15" position="0.63 8.1 0.9"
+        animation="property: position; from:0.63 8.1 0.9;to: 0.63 8.3 0.9;dir:alternate;loop: true; dur: 1000;">
+      </a-sphere>
+
+      <!--Neck-->
+      <a-box color="yellow" position="0 6.7 0" width="2" height="0.4">
+      </a-box>
+
+      <!--Body-->
+      <a-box color="red" position="0 4.5 0" width="4.5" height="4">
+      </a-box>
+
+      <!--Top Stomach-->
+      <a-plane color="yellow" height="1" position="-1.1 5.8 0.7"></a-plane>
+      <a-plane color="blue" height="1" position="0 5.8 0.7"></a-plane>
+      <a-plane color="yellow" height="1" position="1.1 5.8 0.7"></a-plane>
+
+      <!--Middle Stomach-->
+      <a-plane color="blue" height="1" position="-1.1 4.65 0.7"></a-plane>
+      <a-plane color="green" height="1" position="0 4.65 0.7"></a-plane>
+      <a-plane color="blue" height="1" position="1.1 4.65 0.7"></a-plane>
+
+      <!--Bottom Stomach-->
+      <a-plane color="yellow" height="1" position="-1.1 3.5 0.7"></a-plane>
+      <a-plane color="blue" height="1" position="0 3.5 0.7"></a-plane>
+      <a-plane color="yellow" height="1" position="1.1 3.5 0.7"></a-plane>
+
+      <!--Left Arm-->
+      <a-cylinder position="-2.5 5.4 0" rotation="30 90 0" color="orange" height="2" width="0.2" radius="0.3"
+      ></a-cylinder>
+
+      <a-sphere position="-2.95 4.7 0" rotation="-50 90 0" color="#ef5350" height="1.2" width="0.3"radius="0.4"></a-sphere>
+
+      <a-cylinder
+        position="-3.4 5.05 0"
+        rotation="-50 90 0"
+        height="1.3"
+        width="0.3"
+        radius="0.3"
+        color="orange"
+      ></a-cylinder>
+
+      <a-sphere position="-4.3 5.8 0" color="blue" radius="0.7">
+      </a-sphere>
+
+      <!--Right Arm-->
+      <a-cylinder position="2.7 5.5 0" rotation="-50 90 0" color="orange" height="2" width="0.2"radius="0.3">
+      </a-cylinder>
+
+      <a-sphere position="3.4 5 0" rotation="-50 90 0" color="#ef5350" height="1.2" width="0.3" radius="0.4"></a-sphere>
+      </a-sphere>
+
+      <a-cylinder position="4 5.4 0" rotation="50 90 0" color="orange" height="1.3" width="0.3" radius="0.3">
+      </a-cylinder>
+
+      <a-sphere position="4.7 6 0" color="blue" radius="0.7">
+      </a-sphere>
+
+      <!--Left Leg-->
+      <a-cylinder color="orange" radius="0.4" height="3.5" position="-1 0.7 0">
+      </a-cylinder>
+
+      <a-entity position="-1 -0.35 -0.2" rotation="0 0 0"
+        geometry="primitive: sphere; thetaStart:15;thetaLength:50;"
+        
+      ></a-entity>
+
+      <!--Right Leg-->
+      <a-cylinder color="orange" radius="0.4" height="3.5" position="1 0.7 0">
+      </a-cylinder>
+
+      <a-entity position="1 -0.35 -0.2" rotation="0 0 0"
+        geometry="primitive: sphere"
+        
+      ></a-entity>
+
+      <!--CAMERA-->
+      <a-camera position="0 5 10">
+      </a-camera>
+
+
+    </a-scene>
+  </body>
+</html>
